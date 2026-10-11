@@ -2047,7 +2047,7 @@ function proRender() {
       <div class="row"><button class="btn" data-pro="next">${L(last ? 'Vai al tutorial' : 'Avanti')}</button>${last ? '' : `<button class="btn ghost" data-pro="skip">${L('Salta il prologo')}</button>`}</div>
     </div></div>`;
   const svg = el.querySelector('svg');
-  if (svg && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches && svg.pauseAnimations) { try { svg.setCurrentTime(6); svg.pauseAnimations(); } catch (e) {} }
+  if (svg && svg.unpauseAnimations) { try { svg.unpauseAnimations(); } catch (e) {} }
   const nb = el.querySelector('[data-pro=next]'); if (nb && nb.focus) nb.focus({ preventScroll: true });
   el.scrollTop = 0;
 }
