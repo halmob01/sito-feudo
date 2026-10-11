@@ -1557,7 +1557,7 @@ function vIntro() {
     </div>
     <div class="field"><label for="nome">Il tuo nome</label><input id="nome" maxlength="20" placeholder="Come ti chiami?" value="${esc((saved && saved.name) || '')}" autocomplete="off"></div>
     <div class="row"><button class="btn" data-act="start">Inizia</button>${cont}</div>
-    <p class="muted">Prima c'è un tutorial di due minuti. Puoi saltarlo.</p>`;
+    <p class="muted">Prima c'è un prologo e poi un piccolo tutorial. Puoi saltarli.</p>`;
 }
 function vTut() {
   const s = st.tutStep, skip = `<button class="btn ghost" data-act="tut-skip">Salta il tutorial</button>`;
