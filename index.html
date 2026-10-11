@@ -1,4 +1,4 @@
-<!doctype html><html lang="it"><head><title>Mappa del Feudo</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body><title>Mappa del Feudo</title>
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Mappa del Feudo</title></head><body><title>Mappa del Feudo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Public+Sans:wght@400;500;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -1193,7 +1193,7 @@ if (typeof module !== 'undefined') module.exports = { tr, AR, MISS, setLang: l =
 /* ===================== INTERFACCIA E MAPPA ===================== */
 const ARTIFACT_URL = 'https://claude.ai/artifact/TQAHGfgc38SP9v1BYZ6BVJ';
 /* Classifica su Foglio Google: se SHEET_URL è compilato, i punteggi partono da soli a fine partita e il docente li legge dal foglio. */
-const SHEET_URL = '';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyrr8m0eDLg5VIcaNXfPDxr1PJHYGX1lGCgrGjiPcOjKtyOZRO1F0n_Q6rlCq7grCDklA/exec';
 const SHEET_VIEW = 'https://docs.google.com/spreadsheets/d/13Cbgph6DvVGpYP4ZwcNbzlCyqTolq0UscBcMADohBUE/edit';
 const SELF_URL = /github\.io$/.test(location.hostname) ? location.origin + location.pathname : ARTIFACT_URL;
 try { if (localStorage.getItem('feudo-lang') === 'ar') LANG = 'ar'; } catch (e) {}
